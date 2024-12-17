@@ -1,3 +1,18 @@
+'''
+Putnam 2024, B4
+PROBLEM:
+Let n be a positive integer.
+Define a sequence a(k):
+    a(0)=1
+    For k>=0, choose m randomly from the set {1,2,...,n}
+    And a(k+1) =
+        a(k)+1 if m > a(k)
+        a(k) if m = a(k)
+        a(k)-1 if m < a(k)
+Let E(n) be the expected value of a(n).
+What is the lim of E(n)/n as n -> infinity?
+'''
+
 import random
 
 TRIALS = 2000
